@@ -1,0 +1,60 @@
+﻿a {
+	text-decoration: none;
+}
+
+.clearfix {
+	display: block;
+}
+
+
+/* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
+   class to the last thumbnail in each row to get rid of the margin-right. */
+.no-margin {
+	margin-right: 0;
+}
+
+/* --- Link configuration that contains the image and label ----------------------------- */
+.curso a {
+	display: block;
+	position: relative;
+}
+
+.curso a img {
+	height: 130px;
+	left: -10px;
+	position: relative;
+	top: -10px;
+	width: 192px;
+}
+
+/* --- Label configuration -------------------------------------------------------------- */
+.curso a span.dark-background {
+	display: none;
+	font-weight: bold;
+	height: 100%;
+	margin: 0;
+	padding-top: 85px;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	z-index: 100;
+}
+
+/* --- Dark hover background ------------------------------------------------------------ */
+.dark-background 
+{
+    /*background: transparent url('../images/black50opacity.png') repeat;*/
+    background: #000; filter: alpha(opacity=70); /* For IE*/
+	background: rgba(15, 15, 15, 0.6);
+	color: #fff;
+	text-shadow: #000 0px 0px 20px;
+}
+	.dark-background em {
+		color: #ccc;
+	}
+
+/**
+ * You could create multiple hover background classes for different looks depending on the
+ * image type. Use your imagination!
+ */
