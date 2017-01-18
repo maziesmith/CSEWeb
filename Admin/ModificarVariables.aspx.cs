@@ -29,6 +29,9 @@ public partial class Admin_ModificarVariables : System.Web.UI.Page
 
             if (adapter.FillByxVariable(dt, "INFO_ADICIONAL") > 0)
                 txt_info_adicional.Text = dt[0].xInformacion;
+
+            if (adapter.FillByxVariable(dt, "RIF") > 0)
+                txt_rif.Text = dt[0].xInformacion;
         }
     }
 
@@ -80,6 +83,20 @@ public partial class Admin_ModificarVariables : System.Web.UI.Page
         else
         {
             mensaje = "Ha ocurrido un error con la información adicional, por favor vuelva a intentarlo";
+        }
+
+        if (adapter.FillByxVariable(dt, "RIF") > 0)
+        {
+            row = dt[0];
+            row.xInformacion = txt_rif.Text;
+            if (adapter.Update(row) <= 0)
+            {
+                mensaje = "Ha ocurrido un error actualizando el Rif, por favor vuelva a intentarlo";
+            }
+        }
+        else
+        {
+            mensaje = "Ha ocurrido un error con el Rif, por favor vuelva a intentarlo";
         }
 
         Admin_MasterPage admin_master = (Admin_MasterPage)Master;

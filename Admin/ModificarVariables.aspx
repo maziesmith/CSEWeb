@@ -25,6 +25,11 @@
             <span class="label">Informaci&oacute;n adicional</span>
             <asp:TextBox ID="txt_info_adicional" MaxLength="500" runat="server" class="textbox"></asp:TextBox>
         </div>
+
+        <div class="row">
+            <span class="label">Rif</span>
+            <asp:TextBox ID="txt_rif" MaxLength="50" runat="server" class="textbox"></asp:TextBox>
+        </div>
                 
         <asp:Button ID="btn_modificar" runat="server" Text="Modificar" class="button"
             onclick="btn_modificar_Click" />

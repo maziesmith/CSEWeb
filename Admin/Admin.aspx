@@ -11,6 +11,7 @@
     <h2>Administrador</h2>
 
     <ul class="menu_vertical">
+        <li><a href="RegistrarUsuario.aspx">Registrar usuario</a></li>  
         <li><a href="ChangePassword.aspx">Cambiar contrase&ntilde;a</a></li>
         <li><a href="ModificarTiposCurso.aspx">Modificar tipos de curso</a></li>
         <li><a href="CrearCurso.aspx">Crear curso</a></li>

@@ -43,7 +43,8 @@
         
         <%--Footer--%>
         <div id="footer">
-            <p>Rif: V-04911385-3</p>            <p>&copy; @DateTime.Now.Year &copy; Centro Superior de Estudios. Todos los derechos reservados</p>
+            <p>Rif: <%= Variable.Obtener_variable("RIF") %></p>
+            <p><%= DateTime.Now.Year %> &copy; - Centro Superior de Estudios. Todos los derechos reservados</p>
             <a href="Admin/Admin.aspx" class="admin" target="_blank"><img src="public/images/admin.png" alt="" /></a>
         </div>
         <%--End footer--%>
